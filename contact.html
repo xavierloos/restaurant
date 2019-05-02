@@ -1,0 +1,64 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/CSS/index.css">
+    <link rel="stylesheet" href="/CSS/contact.css">
+    <link href='https://fonts.googleapis.com/css?family=Alfa Slab One' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Aleo' rel='stylesheet'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/jquery.validate.js"></script>
+    
+    <title>El burrito Restaurant</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="/IMG/piata.png" alt="pinata" class="pinata">
+        </div>
+        <div class="restaurant">
+            EL Burrito Restaurante Mexicano
+        </div>
+    </header>
+    <nav>
+        <label for="toggle">&#9776</label>
+        <input type="checkbox" id="toggle">
+        <div class="menu">
+            <a href="index.htm">Home</a>
+            <a href="blog.htm">Blog</a>
+            <a href="menu.htm">Menu</a>
+            <a href="book.html">Book</a>
+            <a href="#">Contact</a>
+            <a href="about.htm">About</a>
+        </div>
+    </nav>
+    <section>
+        <article>
+            <div class="title">
+                Contact us
+            </div>
+            <div class="form">
+                <form id="formContact" method="GET" action="commentSubmited.html" name="formContact" >
+                    <input type="text" name="name" id="name" placeholder="Your full name" minlength="2" maxlength="20" required><br>
+                    <input type="text" name="subject" id="subject" minlength="5" maxlength="30" placeholder="Subject" required><br>
+                    <input type="email" name="email" id="email" placeholder="Email" required><br>
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Write here your message" required minlength="200"></textarea>
+                    <button id="sendFormContact">Send...</button> <br>
+                </form>
+            </div>       
+        </article>
+    </section>
+    <aside>
+        <div class="title">
+            Our Socials
+        </div>
+        <a href="#face"><img src="/IMG/face.png" alt="facebook icon"></a>
+        <a href="#insta"><img src="/IMG/insta.png" alt="instagram icon"></a>
+    </aside>
+    <footer>
+        <div class="banner"></div>
+        El burrito Restaurant 2019 ¦ All Rights Reserved. Created by <a href="https://www.linkedin.com/in/xavierloos/">Javier Lopez</a> 
+    </footer>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<html lang="en">
+<head>
+    <title>El burrito Restaurant</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <link rel="stylesheet" href="/CSS/index.css">
+    <link rel="stylesheet" href="/CSS/contact.css">
+
+    <link href='https://fonts.googleapis.com/css?family=Alfa Slab One' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Aleo' rel='stylesheet'>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/d3js/5.7.0/d3.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+        //Date Range for the book - Can not be booked before or on the current date and will be book until 2 months ahead.
+        $( function() {
+            $( "#whenBook" ).datepicker({minDate:1, maxDate:"2M"});
+        } );
+    </script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="/IMG/piata.png" alt="pinata" class="pinata">
+        </div>
+        <div class="restaurant">
+            EL Burrito Restaurante Mexicano
+        </div>
+    </header>
+    <nav>
+        <label for="toggle">&#9776</label>
+        <input type="checkbox" id="toggle">
+        <div class="menu">
+            <a href="index.htm">Home</a>
+            <a href="blog.htm">Blog</a>
+            <a href="menu.htm">Menu</a>
+            <a href="#">Book</a>
+            <a href="contact.html">Contact</a>
+            <a href="about.htm">About</a>
+        </div>
+    </nav>
+    <section>
+        <article>
+            <div class="title">
+                Book a table
+            </div>
+            <div class="slogan">
+                <p>Enjoy those specials occasion with us, book a table now. Remenber a maximun of people 6 and the opening times from 6:00pm until 12:00am</p>
+            </div>
+            <div class="form">
+                <form id="formBook" method="GET" action="tableBooked.html" name="formBook" >
+                    <input type="text" name="nameBook" id="nameBook" placeholder="Under which name?" required><br>
+                    <input type="text" name="occasion" id="occasion" placeholder="Special occasion?" required><br>
+                    <input type="emailBook" name="emailBook" id="emailBook" placeholder="Email" required><br>
+                    <div class="detailsbook">
+                        <input type="number" name="people" id="people" placeholder="How many people?"  min="1" max="6"  required>
+                        <input type="text" name="whenBook" id="whenBook" placeholder="When?"required>
+                        <input type="time" id="appt" name="appt" min="18:00" max="23:00" required>
+                    </div>
+                    <button id="bookit">Book a table...</button> <br>
+                </form>
+            </div>
+        </article> 
+    </section>
+    <aside>
+        <div class="title">
+            Our Socials
+        </div>
+        <a href="#face"><img src="/IMG/face.png" alt="facebook icon"></a>
+        <a href="#insta"><img src="/IMG/insta.png" alt="instagram icon"></a>
+    </aside>
+    <footer>
+        <div class="banner"></div>
+        El burrito Restaurant 2019 ¦ All Rights Reserved. Created by <a href="https://www.linkedin.com/in/xavierloos/">Javier Lopez</a> 
+    </footer>
+</body>
+</html>

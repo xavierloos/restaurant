@@ -1,0 +1,91 @@
+.menuresto{
+  background-color: #62A3C1;
+  width: 100%;
+  height: auto;
+  display: inline-block;
+  text-align: center;
+
+}
+
+.photos{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-grow: 1;
+  width: 100%;
+  padding-bottom: 15PX;
+}
+.wrapperMenuPhotos{
+  width: 30%;
+  box-sizing: border-box;
+  margin: 10px;
+  
+}
+.nameMeal{
+  background-color: #A0D3F0;
+  width: 100%;
+  text-align: center;
+}
+.menuImg{
+  height: 350px;
+  width: 100%;
+  position: absolute;
+  box-shadow: 0 7px 6px -4px #777;
+}
+.infoMeal{
+  background-color: transparent;
+  height: 350px;
+  width: 100%;
+}
+.infoHidden{
+  position: relative;
+  height: 350px;
+  width: 100%;
+  text-align: left;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+.infoMeal:hover .infoHidden {
+  transform: rotateX(180deg);
+}
+.front, .back {
+  position: absolute;
+  height: 350px;
+  width: 100%;
+  backface-visibility: hidden;
+}
+.front{
+  background-color: #A0D3F0;
+  color: white;
+}
+.back {
+  background-color: white;
+  transform: rotateX(180deg);
+  font-family: "Aleo" !important;
+  font-size: 20px;
+  padding: auto;
+}
+@media only screen and (max-width: 500px) {
+
+  .photos{
+    flex-wrap: nowrap;
+  }
+  .wrapperMenuPhotos{
+    margin: 5px;
+  }
+  .menuImg{
+    height: 100px;
+  }
+  .infoMeal{
+    height: 100px;
+  }
+  .infoHidden{
+    height: 100px;
+  }
+  .front, .back {
+    height: 100px;
+  }
+  .back {
+    font-size: 12px;
+  }
+}
