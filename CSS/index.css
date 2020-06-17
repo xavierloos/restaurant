@@ -1,62 +1,56 @@
 /* width */
+
 ::-webkit-scrollbar {
     width: 10px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-    box-shadow: transparent; 
-    border-radius: 10px;
-  }
-   
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: #F48B1E; 
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background-image: linear-gradient(to bottom, #f48b1e, #e57010, #d55404, #c53500, #b30000);
-  }
+}
 
-html,body{
+
+/* Track */
+
+ ::-webkit-scrollbar-track {
+    box-shadow: transparent;
+    border-radius: 10px;
+}
+
+
+/* Handle */
+
+ ::-webkit-scrollbar-thumb {
+    background: #F48B1E;
+}
+
+
+/* Handle on hover */
+
+ ::-webkit-scrollbar-thumb:hover {
+    background-image: linear-gradient(to bottom, #f48b1e, #e57010, #d55404, #c53500, #b30000);
+}
+
+html,
+body {
     scroll-behavior: smooth;
     background-color: white;
-    font-family: 'Alfa Slab One';font-size: 22px;
+    font-family: 'Alfa Slab One';
+    font-size: 22px;
     padding: 0;
     margin: 0;
     display: grid;
     grid-template-rows: auto auto auto auto auto;
-    
-    grid-template-areas: 
-    'header'
-    'nav'
-    'section'
-    'aside'
-    'footer'
-    ;
+    grid-template-areas: 'header' 'nav' 'section' 'aside' 'footer';
 }
-header{
-    grid-area: header;
-    background-color: #62A3C1;
-    color: #394B4F ;
-    width: 100%;
-    height: auto;
-    top: 0;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-.logo{
+
+.logo {
     width: 5%;
     height: auto;
 }
-.logo img{
+
+.logo img {
     width: 100%;
     height: auto;
     margin: 10px;
 }
-.restaurant{
+
+.restaurant {
     width: 90%;
     margin: auto;
     font-size: 50px;
@@ -64,60 +58,36 @@ header{
     color: white;
     text-shadow: -4px 2px 3px rgba(150, 150, 150, 1);
 }
-nav{
-    grid-area: nav;
-    background-color: #F48B1E;
-    display: inline-block; 
-    text-align: center;
-    width: 100%;
-    height: auto;
-    position: -webkit-sticky; /* Safari */
-    position: sticky;
-    top: 0;
-}
-nav a{
-    text-decoration: none;
-    color: #D21E4B;
-    padding-left: 20px;
-    letter-spacing: 3px;
-  
-}
-a:hover{
+
+a:hover {
     color: white;
 }
-#toggle, nav>label{
-    display: none;
-}
-section{
-    grid-area: section;
-    width: 100%;
-    height: auto;
-    min-height: 800px;
-    display: inline-block;
-    text-align: center;
-}
-article{
+
+article {
     width: 80%;
     display: inline-block;
     text-align: center;
     margin-top: 80px;
 }
-div.title{
+
+div.title {
     width: 100%;
-    display:inline-block;
+    display: inline-block;
     text-align: center;
-    text-shadow: -2px 0 #62A3C1,0 2px #62A3C1, 2px 0 #62A3C1, 0 -2px #62A3C1;
+    text-shadow: -2px 0 #62A3C1, 0 2px #62A3C1, 2px 0 #62A3C1, 0 -2px #62A3C1;
     color: white;
     font-size: 40px;
     letter-spacing: 3px;
 }
-.subtitle{
+
+.subtitle {
     font-weight: 900;
     margin: 40px;
     padding: auto;
     height: 100px;
 }
-.slogan{
+
+.slogan {
     font-family: 'Aleo';
     font-size: 22px;
     font-style: italic;
@@ -126,17 +96,18 @@ div.title{
     height: auto;
 }
 
-.imgmapmex{
+.imgmapmex {
     width: 100%;
     padding: 20px;
     display: inline-block;
     text-align: center;
 }
-.imgmapmex>img{
+
+.imgmapmex>img {
     width: 100%;
 }
 
-.wrapper{
+.wrapper {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -145,27 +116,29 @@ div.title{
     width: 100%;
     padding: 20px;
 }
-.wrapperTitle{
+
+.wrapperTitle {
     width: 40%;
     background: #A0D3F0;
-
 }
 
-.wrapperText{
+.wrapperText {
     background-color: white;
     border: #A0D3F0 solid 1px;
     padding: 10px;
     font-family: "Aleo" !important;
 }
-.wrapperText a{
+
+.wrapperText a {
     color: #62A3C1;
-    text-decoration: none 
+    text-decoration: none
 }
-.wrapperText a:hover{
+
+.wrapperText a:hover {
     color: #A0D3F0;
 }
 
-aside{
+aside {
     grid-area: aside;
     width: 100%;
     display: inline-block;
@@ -173,7 +146,7 @@ aside{
     margin-top: 80px;
 }
 
-footer{
+footer {
     grid-area: footer;
     font-size: 12px;
     font-family: Arial, Helvetica, sans-serif;
@@ -183,9 +156,9 @@ footer{
     position: relative;
     width: 100%;
     margin: 80px 0px 10px 0px;
-
 }
-.banner{
+
+.banner {
     background-image: url(/IMG/banner.jpg );
     background-repeat: repeat-x;
     background-size: 20%;
@@ -194,78 +167,112 @@ footer{
 }
 
 @media only screen and (max-width: 500px) {
-    html,body{
+    html,
+    body {
         scroll-behavior: smooth;
-        font-size: 12px; 
+        font-size: 12px;
     }
-    .logo{
+    .logo {
         width: 20%;
         margin: auto;
     }
-    .restaurant{
+    .restaurant {
         width: 70%;
         font-size: 25px;
         letter-spacing: 1px;
     }
-    nav>label{
+    nav>label {
         display: block;
         cursor: pointer;
     }
-    .menu{
+    .menu {
         text-align: center;
         width: 100%;
         display: none;
     }
-    .menu a{
+    .menu a {
         display: block;
         border-bottom: #394B4F 1px solid;
     }
-    #toggle:checked + .menu{
+    #toggle:checked+.menu {
         display: block;
     }
-    section{
+    section {
         min-height: 400px;
     }
-    article{
+    article {
         width: 100%;
         margin: 10px 5px 10px 5px;
     }
-    div.title{
+    div.title {
         font-size: 20px;
         letter-spacing: 1px;
     }
-    .subtitle{
+    .subtitle {
         font-weight: 100;
         margin: 20px;
         height: 10px;
     }
-    .slogan{
+    .slogan {
         font-size: 12px;
         font-style: italic;
         margin: auto;
     }
-    .wrapper{
+    .wrapper {
         width: 100%;
         padding: 5px;
     }
-    .wrapperTitle{
+    .wrapperTitle {
         width: 45%;
-    
     }
-    .wrapperText{
+    .wrapperText {
         padding: 5px;
     }
-    .wrapperText>img{
+    .wrapperText>img {
         width: 5%;
     }
-    aside{
+    aside {
         margin-top: 10px;
     }
-    aside>a>img{
+    aside>a>img {
         width: 10%;
     }
-    .banner{
+    .banner {
         height: 30px;
     }
-    
-  }
+}
+
+
+/* BOOTSTRAP EDIT CLASSES */
+
+.jumbotron {
+    margin-bottom: 0px !important;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 100px;
+}
+
+.vert .carousel-item-next.carousel-item-left,
+.vert .carousel-item-prev.carousel-item-right {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.vert .carousel-item-next,
+.vert .active.carousel-item-right {
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100% 0);
+}
+
+.vert .carousel-item-prev,
+.vert .active.carousel-item-left {
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+}
+
+.padding-0 {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+}

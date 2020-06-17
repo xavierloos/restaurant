@@ -1,0 +1,21 @@
+{
+    "name": "mexican-restaurant",
+    "version": "1.0.0",
+    "description": "Mexican restaurant update on bootstrap",
+    "main": "index.html",
+    "scripts": {
+        "start": "npm run lite",
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "lite": "lite-server"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/xavierloos/restaurant.git"
+    },
+    "author": "Javier Lopez Ramos",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/xavierloos/restaurant/issues"
+    },
+    "homepage": "https://github.com/xavierloos/restaurant#readme"
+}
