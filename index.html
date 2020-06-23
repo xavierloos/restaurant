@@ -19,11 +19,11 @@
         <div class="jumbotron jumbotron-fluid">
             <div class="container">
                 <div class="row">
-                    <div class="col-2 logo">
+                    <div class="col-12 col-sm-2 logo">
                         <img src="/IMG/piata.png" alt="pinata" class="pinata">
                     </div>
-                    <div class="col-10">
-                        <h1 class=" restaurant">EL Burrito Restaurante Mexicano</h1>
+                    <div class="col-12 col-sm-10">
+                        <h1>"EL Burrito" Restaurante Mexicano</h1>
                         <p class="lead">Let's #taco 'bout it.</p>
                     </div>
                 </div>
@@ -240,11 +240,62 @@
                             </div>
                         </div>
                     </div>
+                    <div class="col-12">
+                        <h4>Leave a review</h4>
+                        <form class="border border-secondary p-5 needs-validation" novalidate>
+                            <div class="row">
+                                <div class="col-12 col-sm-6">
+                                    <div class="form-group">
+                                        <div class="input-group">
+                                            <div class="input-group-prepend">
+                                                <span class=" input-group-text" id="validationShowTooltipUsername"><i class="fas fa-user"></i></span>
+                                            </div>
+                                            <input type="text" class="form-control" id="validationUsername" placeholder="Username" aria-describedby="validationShowTooltipUsername" required>
+                                            <div class="invalid-tooltip">
+                                                We would like to know your name!
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <div class="form-group">
+                                        <div class="input-group">
+                                            <div class="input-group-prepend">
+                                                <span class=" input-group-text" id="validationShowTooltipEmail"><i class="fas fa-at"></i></span>
+                                            </div>
+                                            <input type="text" class="form-control" id="validationEmail" placeholder="Enter Email" aria-describedby="validationShowTooltipEmail" required>
+                                            <div class="invalid-tooltip">
+                                                Please add a valid email!
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <textarea type="text" class="form-control" id="review" placeholder="Write your review"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 col-sm-9">
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                        <label class="form-check-label" for="exampleCheck1">I have read the <a href="#"> terms and conditions</a></label>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-3 align-content-end">
+                                    <button type="submit" class="btn btn-primary"><i class="fas fa-paper-plane"></i> Send</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <footer class="container py-5 bg-secondary">
+        <footer class="container p-3 m-0 bg-secondary">
             <div class="row">
                 <div class="col-6 col-md">
 
@@ -282,9 +333,13 @@
                     </h6>
                 </div>
             </div>
-
         </footer>
     </main>
+    <script>
+        $(function() {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
     <!-- OPTIONAL BOOTSTRAP LIBRARIES -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
