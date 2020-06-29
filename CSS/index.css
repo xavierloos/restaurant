@@ -300,3 +300,47 @@ footer {
     font-size: 15px;
     margin: 0;
 }
+
+.search-btn {
+    border-top-right-radius: .2rem !important;
+    border-bottom-right-radius: .2rem !important;
+}
+
+.form-control.searchInput {
+    border-color: #6c757d !important;
+}
+
+.form-control:focus {
+    background-color: #ced4da !important;
+    border-color: #ced4da !important;
+}
+
+.form-control:focus,
+.btn.focus,
+.btn:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.navbar-toggler {
+    border-color: #6c757d !important;
+}
+
+li.nav-item.active {
+    background: #6c757d;
+}
+
+@media only screen and (max-width: 600px) {
+    .carousel-item {
+        height: 250px;
+    }
+    .carousel-item>img {
+        height: 250px;
+    }
+    .btnMap {
+        width: 100%;
+    }
+    li.nav-item.active {
+        padding-left: 1em !important;
+    }
+}

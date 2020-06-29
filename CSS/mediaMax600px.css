@@ -1,0 +1,14 @@
+@media only screen and (max-width: 600px) {
+    .carousel-item {
+        height: 250px;
+    }
+    .carousel-item>img {
+        height: 250px;
+    }
+    .btnMap {
+        width: 100%;
+    }
+    li.nav-item.active {
+        padding-left: 1em !important;
+    }
+}
