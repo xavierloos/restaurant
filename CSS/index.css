@@ -1,31 +1,3 @@
-/* width */
-
-::-webkit-scrollbar {
-    width: 10px;
-}
-
-
-/* Track */
-
- ::-webkit-scrollbar-track {
-    box-shadow: transparent;
-    border-radius: 10px;
-}
-
-
-/* Handle */
-
- ::-webkit-scrollbar-thumb {
-    background: #F48B1E;
-}
-
-
-/* Handle on hover */
-
- ::-webkit-scrollbar-thumb:hover {
-    background-image: linear-gradient(to bottom, #f48b1e, #e57010, #d55404, #c53500, #b30000);
-}
-
 html,
 body {
     scroll-behavior: smooth;
@@ -39,207 +11,16 @@ body {
     grid-template-areas: 'header' 'nav' 'section' 'aside' 'footer';
 }
 
-.logo {
-    width: 5%;
-    height: auto;
-}
-
-.logo img {
-    width: 100%;
-    height: auto;
-    margin: 10px;
-}
-
 .restaurant {
-    width: 90%;
     margin: auto;
-    font-size: 50px;
+    font-size: 3em;
     letter-spacing: 2px;
-    color: white;
+    color: #0064c6;
     text-shadow: -4px 2px 3px rgba(150, 150, 150, 1);
 }
 
-a:hover {
-    color: white;
-}
-
-article {
-    width: 80%;
-    display: inline-block;
-    text-align: center;
-    margin-top: 80px;
-}
-
-div.title {
-    width: 100%;
-    display: inline-block;
-    text-align: center;
-    text-shadow: -2px 0 #62A3C1, 0 2px #62A3C1, 2px 0 #62A3C1, 0 -2px #62A3C1;
-    color: white;
-    font-size: 40px;
-    letter-spacing: 3px;
-}
-
-.subtitle {
-    font-weight: 900;
-    margin: 40px;
-    padding: auto;
-    height: 100px;
-}
-
-.slogan {
-    font-family: 'Aleo';
-    font-size: 22px;
-    font-style: italic;
-    margin: 30px;
-    padding: auto;
-    height: auto;
-}
-
-.imgmapmex {
-    width: 100%;
-    padding: 20px;
-    display: inline-block;
-    text-align: center;
-}
-
-.imgmapmex>img {
-    width: 100%;
-}
-
-.wrapper {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    background-color: #62A3C1;
-    width: 100%;
-    padding: 20px;
-}
-
-.wrapperTitle {
-    width: 40%;
-    background: #A0D3F0;
-}
-
-.wrapperText {
-    background-color: white;
-    border: #A0D3F0 solid 1px;
-    padding: 10px;
-    font-family: "Aleo" !important;
-}
-
-.wrapperText a {
-    color: #62A3C1;
-    text-decoration: none
-}
-
-.wrapperText a:hover {
-    color: #A0D3F0;
-}
-
-aside {
-    grid-area: aside;
-    width: 100%;
-    display: inline-block;
-    text-align: center;
-    margin-top: 80px;
-}
-
 footer {
-    grid-area: footer;
-    font-size: 12px;
-    font-family: Arial, Helvetica, sans-serif;
-    display: inline-block;
-    text-align: center;
-    bottom: 0;
-    position: relative;
-    width: 100%;
-    margin: 80px 0px 10px 0px;
-}
-
-.banner {
-    background-image: url(/IMG/banner.jpg );
-    background-repeat: repeat-x;
-    background-size: 20%;
-    height: 60px;
-    width: 100%;
-}
-
-@media only screen and (max-width: 500px) {
-    html,
-    body {
-        scroll-behavior: smooth;
-        font-size: 12px;
-    }
-    .logo {
-        width: 20%;
-        margin: auto;
-    }
-    .restaurant {
-        width: 70%;
-        font-size: 25px;
-        letter-spacing: 1px;
-    }
-    nav>label {
-        display: block;
-        cursor: pointer;
-    }
-    .menu {
-        text-align: center;
-        width: 100%;
-        display: none;
-    }
-    .menu a {
-        display: block;
-        border-bottom: #394B4F 1px solid;
-    }
-    #toggle:checked+.menu {
-        display: block;
-    }
-    section {
-        min-height: 400px;
-    }
-    article {
-        width: 100%;
-        margin: 10px 5px 10px 5px;
-    }
-    div.title {
-        font-size: 20px;
-        letter-spacing: 1px;
-    }
-    .subtitle {
-        font-weight: 100;
-        margin: 20px;
-        height: 10px;
-    }
-    .slogan {
-        font-size: 12px;
-        font-style: italic;
-        margin: auto;
-    }
-    .wrapper {
-        width: 100%;
-        padding: 5px;
-    }
-    .wrapperTitle {
-        width: 45%;
-    }
-    .wrapperText {
-        padding: 5px;
-    }
-    .wrapperText>img {
-        width: 5%;
-    }
-    aside {
-        margin-top: 10px;
-    }
-    aside>a>img {
-        width: 10%;
-    }
-    .banner {
-        height: 30px;
-    }
+    font-size: 14px;
 }
 
 
@@ -247,6 +28,10 @@ footer {
 
 .jumbotron {
     margin-bottom: 0px !important;
+}
+
+.navbar {
+    background: #e9ecef !important;
 }
 
 .card-img-top {
@@ -308,6 +93,7 @@ footer {
 
 .form-control.searchInput {
     border-color: #6c757d !important;
+    background: #e9ecef;
 }
 
 .form-control:focus {
@@ -322,12 +108,33 @@ footer {
     box-shadow: none !important;
 }
 
+button:focus {
+    outline: none !important;
+    outline: none !important;
+}
+
 .navbar-toggler {
     border-color: #6c757d !important;
 }
 
 li.nav-item.active {
     background: #6c757d;
+}
+
+.carousel-indicators {
+    bottom: -10px !important;
+}
+
+.carousel-indicators li {
+    background: rgb(245, 245, 245);
+    border: 1px solid #848688;
+    width: 10px !important;
+    height: 10px !important;
+    border-radius: 50%;
+}
+
+.carousel-indicators .active {
+    background-color: #848688 !important;
 }
 
 @media only screen and (max-width: 600px) {

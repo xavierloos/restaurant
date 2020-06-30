@@ -13,14 +13,170 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!--FONTAWESOME-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous" />
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+    <style>
+        html,
+        body {
+            scroll-behavior: smooth;
+            background-color: white;
+            font-size: 22px;
+            padding: 0;
+            margin: 0;
+            font-family: 'Comfortaa', cursive;
+        }
+        
+        .restaurant {
+            margin: auto;
+            font-size: 3em;
+            letter-spacing: 2px;
+            color: #0064c6;
+            text-shadow: -4px 2px 3px rgba(150, 150, 150, 1);
+        }
+        
+        footer {
+            font-size: 14px;
+        }
+        /* BOOTSTRAP EDIT CLASSES */
+        
+        .jumbotron {
+            margin-bottom: 0px !important;
+        }
+        
+        .navbar {
+            background: #e9ecef !important;
+        }
+        
+        .card-img-top {
+            width: 100%;
+            height: 100px;
+        }
+        
+        .vert .carousel-item-next.carousel-item-left,
+        .vert .carousel-item-prev.carousel-item-right {
+            -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+        }
+        
+        .vert .carousel-item-next,
+        .vert .active.carousel-item-right {
+            -webkit-transform: translate3d(0, 100%, 0);
+            transform: translate3d(0, 100% 0);
+        }
+        
+        .vert .carousel-item-prev,
+        .vert .active.carousel-item-left {
+            -webkit-transform: translate3d(0, -100%, 0);
+            transform: translate3d(0, -100%, 0);
+        }
+        
+        .padding-0 {
+            padding-right: 0 !important;
+            padding-left: 0 !important;
+        }
+        
+        .card-body>.btn {
+            white-space: pre-wrap;
+        }
+        
+        .img-comments {
+            width: 100%;
+        }
+        
+        .comment {
+            min-height: 20px;
+            padding: 0.5em;
+            margin-bottom: 1em;
+            background-color: #f5f5f5;
+            border: 1px solid #e3e3e3;
+            border-radius: 4px;
+            -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+            box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+        }
+        
+        .comment>p {
+            font-size: 15px;
+            margin: 0;
+        }
+        
+        .search-btn {
+            border-top-right-radius: .2rem !important;
+            border-bottom-right-radius: .2rem !important;
+        }
+        
+        .form-control.searchInput {
+            border-color: #6c757d !important;
+            background: #e9ecef;
+        }
+        
+        .form-control:focus {
+            background-color: #ced4da !important;
+            border-color: #ced4da !important;
+        }
+        
+        .form-control:focus,
+        .btn.focus,
+        .btn:focus {
+            outline: none !important;
+            box-shadow: none !important;
+        }
+        
+        button:focus {
+            outline: none !important;
+            outline: none !important;
+        }
+        
+        .navbar-toggler {
+            border-color: #6c757d !important;
+        }
+        
+        li.nav-item.active {
+            background: #6c757d;
+            border-top-right-radius: 15px;
+            border-top-left-radius: 15px;
+        }
+        
+        .carousel-indicators {
+            bottom: -10px !important;
+        }
+        
+        .carousel-indicators li {
+            background: rgb(245, 245, 245);
+            border: 1px solid #848688;
+            width: 10px !important;
+            height: 10px !important;
+            border-radius: 50%;
+        }
+        
+        .carousel-indicators .active {
+            background-color: #848688 !important;
+        }
+        
+        @media only screen and (max-width: 600px) {
+            .carousel-item {
+                height: 250px;
+            }
+            .carousel-item>img {
+                height: 250px;
+            }
+            .btnMap {
+                width: 100%;
+            }
+            li.nav-item.active {
+                padding-left: 1em !important;
+                border-top-right-radius: 0px;
+                border-top-left-radius: 0px;
+            }
+        }
+    </style>
 </head>
 
 <body>
-    <div class="jumbotron bg-white ">
+    <div class="jumbotron">
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <h1><i class="fas fa-pepper-hot"></i> "EL Burrito" Restaurante Mexicano</h1>
+                    <h1 class="restaurant"><i class="fas fa-pepper-hot"></i> "EL Burrito" Restaurante Mexicano</h1>
                     <p class="lead text-right">Let's #taco 'bout it...</p>
                 </div>
             </div>
@@ -30,7 +186,7 @@
         </div>
 
     </div>
-    <nav class="navbar navbar-expand-sm bg-white d-flex justify-content-between">
+    <nav class="navbar navbar-expand-sm d-flex justify-content-between" style="padding-bottom: 0; border-bottom: 5px solid #6c757d;">
         <!-- Toggler/collapsibe Button -->
         <div class="row m-auto d-flex justify-content-between">
             <div class="col-12 col-sm-12 col-md-7 order-1 order-sm-0">
@@ -92,7 +248,7 @@
                                 <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleLoginModal" aria-hidden="true">
                                     <div class="modal-dialog" role="document">
                                         <div class="modal-content">
-                                            <div class="modal-header">
+                                            <div class="modal-header  bg-secondary text-light">
                                                 <h5 class="modal-title" id="exampleLoginModal"><i class="fas fa-user"></i> Login</h5>
 
                                                 </button>
@@ -172,7 +328,8 @@
                 <div class="carousel-item">
                     <img width="100%" height="500px" src="https://pbs.twimg.com/media/DLyktRKWAAA0MHP.jpg" alt="reserve banner">
                     <div class="carousel-caption">
-                        <h5 class="text-secondary">Where the party starts</h5>
+                        <h5 class="text-secondary" style="background: white;
+                        padding: 0.2em;">Where the party starts</h5>
                         <button type="button" class="btn btn-brand btn-block bg-secondary"><a href="book.html" class="btn-text text-light"> Book a table now</a></button>
                     </div>
                 </div>
@@ -210,10 +367,10 @@
                                 <div class="modal fade" id="mapModal" tabindex="-1" role="dialog" aria-labelledby="exampleMapModal" aria-hidden="true">
                                     <div class="modal-dialog" role="document">
                                         <div class="modal-content">
-                                            <div class="modal-header">
+                                            <div class="modal-header bg-secondary text-light">
                                                 <h5 class="modal-title" id="exampleMapModall">Find us in</h5>
-                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
+                                                <button type="button" class="close text-light" data-dismiss="modal" aria-label="Close">
+                                                    <i class="fas fa-times"></i>
                                           </button>
                                             </div>
                                             <div class="modal-body">
@@ -230,7 +387,7 @@
                                 <div class="card">
                                     <img class=" d-none d-md-block card-img-top" src="IMG/glasgow-flag.png" alt="Card image cap">
                                     <div class="card-body">
-                                        <h5 class="card-title">London</h5>
+                                        <h5 class="card-title">Scotland</h5>
                                         <p class="card-text">69 Victoria St, <br>Westminster, <br>London <br>SW1E 5NA</p>
                                         <a href="#" class="btn btn-secondary btnMap" data-toggle="modal" data-target="#mapModal">Check on the map</a>
                                     </div>
@@ -240,7 +397,7 @@
                                 <div class="card">
                                     <img class="  d-none d-md-block card-img-top" src="IMG/manchester-flag.jpg" alt="Card image cap">
                                     <div class="card-body">
-                                        <h5 class="card-title">London</h5>
+                                        <h5 class="card-title">Manchester</h5>
                                         <p class="card-text">69 Victoria St, <br>Westminster, <br>London <br>SW1E 5NA</p>
                                         <a href="#" class="btn btn-secondary btnMap" data-toggle="modal" data-target="#mapModal">Check on the map</a>
                                     </div>
@@ -503,7 +660,8 @@
                         <h6 class="title">
                             Company
                         </h6>
-                        <p>Made with love by Javier Lopez Ramos <i class="fas fa-copyright"></i> All rights reserved</p>
+                        <p>Made with <i class="fas fa-heart" style="color: red;"></i> by <a href="https://www.linkedin.com/in/xavierloos/">Javier Lopez Ramos</a></p>
+                        <p> <i class="fas fa-copyright"></i> All rights reserved</p>
                     </div>
                     <div class="col-6 col-md">
                         <h6 class="title">
@@ -511,7 +669,7 @@
                         </h6>
                         <ul class="list-unstyled">
                             <li>
-                                <a href="#" class="text-secondary"><i class="fas fa-book-reader"></i> New book recipies</a>
+                                <a href="#" class="text-secondary"><i class="fas fa-book"></i></i> New book recipies</a>
                             </li>
                             <li>
                                 <a href="#" class="text-secondary"><i class="fas fa-tshirt"></i> Mexican Clothes</a>
