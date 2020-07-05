@@ -1,0 +1,604 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="CSS/home.css">
+    <link rel="stylesheet" href="/CSS/blog-style.css">
+    <link href='https://fonts.googleapis.com/css?family=Alfa Slab One' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Aleo' rel='stylesheet'>
+    <title>El burrito Restaurant</title>
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!--FONTAWESOME-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous" />
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+    <style>
+        body {
+            scroll-behavior: smooth;
+            background-color: white;
+            font-size: 22px;
+            padding: 0;
+            margin: 0;
+            font-family: 'Comfortaa', cursive;
+        }
+        
+        p {
+            font-size: 12px
+        }
+        
+        .jumbotron {
+            padding: 2em 0 !important;
+        }
+        
+        .restaurant {
+            margin: auto;
+            letter-spacing: 2px;
+            color: #0064c6;
+            font-weight: bolder;
+            font-size: 1.5em;
+            text-shadow: -4px 2px 3px rgba(150, 150, 150, 1);
+        }
+        
+        footer {
+            font-size: 14px;
+        }
+        
+        .carousel-indicators.menu {
+            justify-content: flex-end;
+            bottom: 0 !important;
+        }
+        
+        .carousel-indicators li {
+            background: rgb(245, 245, 245);
+            border: 1px solid #848688;
+            width: 10px !important;
+            height: 10px !important;
+            border-radius: 50%;
+        }
+        
+        .carousel-indicators .active {
+            background-color: #848688 !important;
+        }
+        
+        .carousel-item {
+            height: auto;
+        }
+        
+        .starter-description {
+            font-size: 0.7em;
+            color: #848688;
+            font-style: italic;
+        }
+        
+        .info-badges {
+            text-align: right;
+            font-size: 0.7em;
+        }
+        
+        .badge {
+            box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, .3);
+        }
+        
+        .mainSection {
+            background: #e9ecef;
+        }
+        
+        @media only screen and (max-width: 575px) {
+            .starter-inner {
+                height: auto !important;
+            }
+            .carousel-indicators.menu {
+                justify-content: flex-start;
+                bottom: 0 !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="jumbotron">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="restaurant"><i class="fas fa-pepper-hot"></i> "EL Burrito" Restaurante Mexicano</h1>
+                    <p class="lead text-right">Let's #taco 'bout it...</p>
+                </div>
+            </div>
+            <!-- <div class="row"> -->
+
+            <!-- </div> -->
+        </div>
+
+    </div>
+    <nav class="navbar navbar-expand-sm d-flex justify-content-between" style="padding-bottom: 0; border-bottom: 5px solid #6c757d;">
+        <!-- Toggler/collapsibe Button -->
+        <div class="row m-auto d-flex justify-content-between">
+            <div class="col-12 col-sm-7 col-md-7 order-1 order-sm-0">
+                <div class="collapse navbar-collapse " id="collapsibleNavbar">
+                    <!-- Links -->
+                    <ul class="navbar-nav ">
+                        <li class="nav-item">
+                            <a class="nav-link text-secondary" href="index.html"><span
+                                    class="d-block d-sm-none d-lg-block">Home</span><i
+                                    class="fas fa-home d-none d-sm-block d-lg-none"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-secondary" href="blog.html"><span
+                                    class="d-block d-sm-none d-lg-block">Blog</span><i
+                                    class="fas fa-blog d-none d-sm-block d-lg-none"></i></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link text-light" href="#"><span
+                                    class="d-block d-sm-block d-lg-block">Menu</span><i
+                                    class="fas fa-utensils d-none d-sm-none d-lg-none"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-secondary" href="book.html"><span
+                                    class="d-block d-sm-none d-lg-block">Book</span><i
+                                    class="fas fa-calendar-day d-none d-sm-block d-lg-none"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-secondary" href="contact.html"><span
+                                    class="d-block d-sm-none d-lg-block">Contact</span><i
+                                    class="fas fa-address-card d-none d-sm-block d-lg-none"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-secondary" href="about.htm"><span
+                                    class="d-block d-sm-none d-lg-block">About</span><i
+                                    class="fas fa-info-circle d-none d-sm-block d-lg-none"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-12 col-sm-5 col-md-5 order-0  order-sm-1">
+                <div class="row">
+                    <div class="col-3">
+                        <button class="navbar-toggler btn btn-outline-secondary" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                            <span class=" fas fa-bars"></span>
+                        </button>
+                    </div>
+                    <div class="col-9 col-sm-12 d-flex align-content-end">
+                        <div class="row">
+                            <div class="col-8 col-sm-10 col-md-7">
+                                <form class="form-inline m-auto">
+                                    <div class="form-group" style="width: 100%;">
+                                        <div class="input-group input-group-sm ">
+                                            <input type="search" class="form-control searchInput" id="validationSearch" placeholder="Search..." aria-describedby="validationShowTooltipEmail" aria-label="Search" required>
+                                            <div class="input-group-append">
+                                                <button class="btn btn-sm btn-secondary search-btn" type="submit" for="validationSearch" id="validationShowTooltipEmail">
+                                                    <span class="fas fa-search"></span>
+                                                </button>
+                                            </div>
+                                            <div class="invalid-tooltip">
+                                                Please add a valid email!
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="col-2 col-sm-2">
+                                <button class="btn btn-outline-secondary" type="button" data-toggle="modal" data-target="#loginModal">
+                                    <span class="far fa-user"></span>
+                                </button>
+                                <!-- Login modal -->
+                                <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleLoginModal" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header  bg-secondary text-light">
+                                                <h5 class="modal-title" id="exampleLoginModal"><i class="fas fa-user"></i> Login</h5>
+
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <form class=" p-5 needs-validation" novalidate>
+                                                    <div class="row">
+                                                        <div class="col-12 col-sm-12">
+                                                            <div class="form-group">
+                                                                <div class="input-group">
+                                                                    <div class="input-group-prepend">
+                                                                        <span for="validationEmail" class=" input-group-text" id="validationShowTooltipEmail"><i
+                                                                                class="fas fa-at"></i></span>
+                                                                    </div>
+                                                                    <input type="text" class="form-control" id="validationEmail" placeholder="Enter Email" aria-describedby="validationShowTooltipEmail" required>
+                                                                    <div class="invalid-tooltip">
+                                                                        Please add a valid email!
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-12 col-sm-12">
+                                                            <div class="form-group">
+                                                                <div class="input-group">
+                                                                    <div class="input-group-prepend">
+                                                                        <span for="validationPassword" class=" input-group-text" id="validationShowTooltipPassword"><i
+                                                                                class="fas fa-key"></i></span>
+                                                                    </div>
+                                                                    <input type="text" class="form-control" id="validationPassword" placeholder="Enter Password" aria-describedby="validationShowTooltipPassword" required>
+                                                                    <div class="invalid-tooltip">
+                                                                        Please add a valid password!
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-12 col-sm-12">
+                                                            <div class="form-check">
+                                                                <input type="checkbox" class="form-check-input" id="checkRemember">
+                                                                <label class="form-check-label" for="checkRememeber">Remember me</a></label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button " class="btn btn-outline-secondary " data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true"><i class="fas fa-times"></i>
+                                                        Cancel</span></button>
+                                                <button type="submit" class="btn btn-secondary"><i
+                                                        class="fas fa-sign-in-alt"></i> Go</button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </nav>
+    <main role="main">
+        <div class="container">
+            <div class="row p-5">
+                <div class="col-12">
+                    <h2>Starters</h2>
+                </div>
+                <div class="col-12">
+                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                </div>
+            </div>
+            <div id="menu-starter" class="row">
+                <div class="col-12">
+                    <div id="carouselStarters" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators menu">
+                            <li data-target="#carouselStarters" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselStarters" data-slide-to="1"></li>
+                            <li data-target="#carouselStarters" data-slide-to="2"></li>
+                            <li data-target="#carouselStarters" data-slide-to="3"></li>
+                        </ol>
+                        <div class="carousel-inner starter-inner">
+                            <div class="carousel-item active">
+                                <div class="row">
+                                    <div class="col-12 col-sm-6">
+                                        <img src="https://www.rd.com/wp-content/uploads/2017/05/06-easy-mexican-recipes-MargaritaGranitaWSpicyShrimp-760x506.jpg" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="col-12 col-sm-6">
+                                        <h5>Spacy Prawns </h5>
+                                        <p class="starter-description">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                                            ea commodo consequat.</p>
+                                        <p class="info-badges"><span class="badge badge-pill badge-danger"><i class="fas fa-pepper-hot"></i> Spacy</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-12 col-sm-6">
+                                        <img src="https://cdn.torontolife.com/wp-content/uploads/2020/03/toronto-restaurants-buena-copa-mexican-college-sopa-2-368x0-c-default.jpg" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="col-12 col-sm-6">
+                                        <h5>Azteca Soup </h5>
+                                        <p class="starter-description">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                                            ea commodo consequat.</p>
+                                        <p class="info-badges"><span class="badge badge-pill badge-danger"><i class="fas fa-pepper-hot"></i> Spacy</span> <span class="badge badge-pill badge-warning"><i class="fas fa-star"></i> New</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-12 col-sm-6">
+                                        <img src="https://media-cdn.tripadvisor.com/media/photo-s/18/f3/a8/02/mexican-tapas.jpg" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="col-12 col-sm-6">
+                                        <h5>Tostitas </h5>
+                                        <p class="starter-description">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                                            ea commodo consequat.</p>
+                                        <p class="info-badges"><span class="badge badge-pill badge-primary"><i class="fas fa-heart text-danger"></i> Best Rate</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-12 col-sm-6">
+                                        <img src="https://chowhound1.cbsistatic.com/thumbnail/800/0/chowhound1.cbsistatic.com/blog-media/2017/02/mexican-shrimp-cocktail-recipe-chowhound-670x446.jpg" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="col-12 col-sm-6">
+                                        <h5>Sea Mar </h5>
+                                        <p class="starter-description">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                                            ea commodo consequat.</p>
+                                        <p class="info-badges"><span class="badge badge-pill badge-success"><i class="fas fa-apple-alt"></i> Season</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main course -->
+        <div class="container mainSection my-3 py-3">
+            <div class="row p-5">
+                <div class="col-12">
+                    <h2>Mains</h2>
+                </div>
+                <div class="col-12">
+                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                </div>
+            </div>
+            <div id="menu-starter" class="row">
+                <div class="col-12">
+                    <div id="carouselMains" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators menu">
+                            <li data-target="#carouselMains" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselMains" data-slide-to="1"></li>
+                            <li data-target="#carouselMains" data-slide-to="2"></li>
+                            <li data-target="#carouselMains" data-slide-to="3"></li>
+                        </ol>
+                        <div class="carousel-inner starter-inner">
+                            <div class="carousel-item active">
+                                <div class="row">
+                                    <div class="col-12 col-sm-6">
+                                        <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/delish-zucchini-burrito-boats-horizontal-1-1535729324.png" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="col-12 col-sm-6">
+                                        <h5>Green Mexico</h5>
+                                        <p class="starter-description">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                                            ea commodo consequat.</p>
+                                        <p class="info-badges"><span class="badge badge-pill badge-danger"><i class="fas fa-pepper-hot"></i> Spacy</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-12 col-sm-6">
+                                        <img src="https://www.bbcgoodfood.com/sites/default/files/recipe-collections/collection-image/2013/05/huevos-rancheros.jpg" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="col-12 col-sm-6">
+                                        <h5>Huevos </h5>
+                                        <p class="starter-description">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                                            ea commodo consequat.</p>
+                                        <p class="info-badges"><span class="badge badge-pill badge-danger"><i class="fas fa-pepper-hot"></i> Spacy</span> <span class="badge badge-pill badge-warning"><i class="fas fa-star"></i> New</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-12 col-sm-6">
+                                        <img src="https://prods3.imgix.net/images/articles/2017_05/nonfeatured-traditional-mexican-foods.jpg" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="col-12 col-sm-6">
+                                        <h5>MexBall </h5>
+                                        <p class="starter-description">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                                            ea commodo consequat.</p>
+                                        <p class="info-badges"><span class="badge badge-pill badge-primary"><i class="fas fa-heart text-danger"></i> Best Rate</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-12 col-sm-6">
+                                        <img src="https://recipetineats.com/wp-content/uploads/2018/05/Pork-Carnitas_v2_8-SQ-landscape.jpg" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="col-12 col-sm-6">
+                                        <h5>Birria de Tacos </h5>
+                                        <p class="starter-description">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                                            ea commodo consequat.</p>
+                                        <p class="info-badges"><span class="badge badge-pill badge-success"><i class="fas fa-apple-alt"></i> Season</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Postres -->
+        <div class="container">
+            <div class="row p-5">
+                <div class="col-12">
+                    <h2>Postres</h2>
+                </div>
+                <div class="col-12">
+                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div id="carouselPostres" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators menu">
+                            <li data-target="#carouselPostres" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselPostres" data-slide-to="1"></li>
+                            <li data-target="#carouselPostres" data-slide-to="2"></li>
+                            <li data-target="#carouselPostres" data-slide-to="3"></li>
+                        </ol>
+                        <div class="carousel-inner starter-inner">
+                            <div class="carousel-item active">
+                                <div class="row">
+                                    <div class="col-12 col-sm-6">
+                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT0aND3Qt6ZUXDknXK4tFQdNjK2dLVLAVy2-Q&usqp=CAU" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="col-12 col-sm-6">
+                                        <h5>ChurroMilk</h5>
+                                        <p class="starter-description">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                                            ea commodo consequat.</p>
+                                        <p class="info-badges"><span class="badge badge-pill badge-primary"><i class="fas fa-heart text-danger"></i> Best Rate</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-12 col-sm-6">
+                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSXI81SfA6KAUwcn1pjNojT4XrFimTzihIG7w&usqp=CAU" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="col-12 col-sm-6">
+                                        <h5>Flan Napolitano </h5>
+                                        <p class="starter-description">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                                            ea commodo consequat.</p>
+                                        <p class="info-badges"><span class="badge badge-pill badge-warning"><i class="fas fa-star"></i> New</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-12 col-sm-6">
+                                        <img src="https://d3d7qmccklvqbw.cloudfront.net/wp-content/uploads/2019/01/o_1bc8brsra1r2bfi2jhrpk71vp.jpg" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="col-12 col-sm-6">
+                                        <h5>QuePanzote! </h5>
+                                        <p class="starter-description">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                                            ea commodo consequat.</p>
+                                        <p class="info-badges">
+                                            <p class="info-badges"><span class="badge badge-pill badge-success"><i class="fas fa-apple-alt"></i> Season</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-12 col-sm-6">
+                                        <img src="https://pepes.com/_image/_menu/_postres/bunuelos.jpg" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="col-12 col-sm-6">
+                                        <h5>Hojaldras with ice cream </h5>
+                                        <p class="starter-description">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                                            ea commodo consequat.</p>
+                                        <p class="info-badges"><span class="badge badge-pill badge-success"><i class="fas fa-apple-alt"></i> Season</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="bd-footer text-muted bg-light mt-5 mb-0">
+            <div class="container p-3 p-md-5">
+                <div class="row">
+                    <div class="col-6 col-md">
+
+                        <h6 class="title">
+                            Our Socials
+                        </h6>
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="#twitter" class="text-secondary"><i class="fab fa-twitter-square"></i>
+                                    Twitter</a>
+                            </li>
+                            <li>
+                                <a href="#facebook" class="text-secondary"><i class="fab fa-facebook-square"></i>
+                                    Facebook</a>
+                            </li>
+                            <li>
+                                <a href="#instagram" class="text-secondary"><i class="fab fa-instagram"></i>
+                                    Instagram</a>
+                            </li>
+                            <li>
+                                <a href="#googleplus" class="text-secondary"><i class="fab fa-google-plus-square"></i>
+                                    Google+</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-md">
+                        <h6 class="title">
+                            Company
+                        </h6>
+                        <p>Made with <i class="fas fa-heart" style="color: red;"></i> by <a href="https://www.linkedin.com/in/xavierloos/">Javier Lopez Ramos</a></p>
+                        <p> <i class="fas fa-copyright"></i> All rights reserved</p>
+                    </div>
+                    <div class="col-6 col-md">
+                        <h6 class="title">
+                            Shop
+                        </h6>
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="#" class="text-secondary"><i class="fas fa-book"></i></i> New book recipies</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-secondary"><i class="fas fa-tshirt"></i> Mexican Clothes</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-secondary"><i class="fas fa-gift"></i> Gifts</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-secondary"><i class="fas fa-ticket-alt"></i> Vouchers</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-md">
+                        <h6 class="title">
+                            Site Map
+                        </h6>
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="#" class="text-secondary">Home</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-secondary">Blog</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-secondary">Menu</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-secondary">Reserve</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-secondary">Contact</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-secondary">About</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+    </main>
+    <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (function() {
+            'use strict';
+            window.addEventListener('load', function() {
+                // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                var forms = document.getElementsByClassName('needs-validation');
+                // Loop over them and prevent submission
+                var validation = Array.prototype.filter.call(forms, function(form) {
+                    form.addEventListener('submit', function(event) {
+                        if (form.checkValidity() === false) {
+                            event.preventDefault();
+                            event.stopPropagation();
+                        }
+                        form.classList.add('was-validated');
+                    }, false);
+                });
+            }, false);
+        })();
+    </script>
+    <!-- OPTIONAL BOOTSTRAP LIBRARIES -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
