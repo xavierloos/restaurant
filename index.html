@@ -41,6 +41,58 @@
         footer {
             font-size: 14px;
         }
+        
+        #forkongithub {
+            position: fixed;
+            display: block;
+            top: 0;
+            right: 0;
+            width: 200px;
+            overflow: hidden;
+            height: 200px;
+            z-index: 9999;
+        }
+        
+        #forkongithub a {
+            background: grey;
+            color: white;
+            width: 200px;
+            position: absolute;
+            padding: 2px 2px 2px 40px;
+            top: 40px;
+            right: -40px;
+            transform: rotate(45deg);
+            -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            -moz-transform: rotate(45deg);
+            -o-transform: rotate(45deg);
+            box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8);
+            transition: .3s ease-in-out;
+        }
+        
+        #forkongithub a::before,
+        #forkongithub a::after {
+            content: "";
+            width: 100%;
+            display: block;
+            position: absolute;
+            top: 1px;
+            left: 0;
+            height: 1px;
+        }
+        
+        #forkongithub a::after {
+            bottom: 1px;
+            top: auto;
+        }
+        
+        #forkongithub>a:hover {
+            background: white;
+            color: #6c757d;
+            text-decoration: none;
+            font-weight: bolder;
+            transition: all 0.3s ease;
+        }
         /* BOOTSTRAP EDIT CLASSES */
         
         .jumbotron {
@@ -210,7 +262,7 @@
                             <a class="nav-link text-secondary" href="menu.html"><span class="d-block d-sm-none d-lg-block">Menu</span><i class="fas fa-utensils d-none d-sm-block d-lg-none"></i></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-secondary" href="reserve.html"><span class="d-block d-sm-none d-lg-block">Book</span><i class="fas fa-calendar-day d-none d-sm-block d-lg-none"></i></a>
+                            <a class="nav-link text-secondary" href="reserve.html"><span class="d-block d-sm-none d-lg-block">Reserve</span><i class="fas fa-calendar-day d-none d-sm-block d-lg-none"></i></a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-secondary" href="contact.html"><span class="d-block d-sm-none d-lg-block">Contact</span><i class="fas fa-address-card d-none d-sm-block d-lg-none"></i></a>
@@ -337,7 +389,7 @@
                     <div class="carousel-caption">
                         <h5 class="text-secondary" style="background: white;
                         padding: 0.2em;">Where the party starts</h5>
-                        <button type="button" class="btn btn-brand btn-block bg-secondary"><a href="book.html" class="btn-text text-light"> Book a table now</a></button>
+                        <button type="button" class="btn btn-brand btn-block bg-secondary"><a href="reserve.html" class="btn-text text-light"> Reserve a table now</a></button>
                     </div>
                 </div>
             </div>
@@ -669,6 +721,9 @@
                         </h6>
                         <p>Made with <i class="fas fa-heart" style="color: red;"></i> by <a href="https://www.linkedin.com/in/xavierloos/">Javier Lopez Ramos</a></p>
                         <p> <i class="fas fa-copyright"></i> All rights reserved</p>
+                        <span id="forkongithub">
+                            <a href="#">Fork me on GitHub</a>
+                          </span>
                     </div>
                     <div class="col-6 col-md">
                         <h6 class="title">
