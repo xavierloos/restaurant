@@ -1,64 +1,431 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="/CSS/index.css">
-    <link rel="stylesheet" href="/CSS/contact.css">
+    <link rel="stylesheet" href="CSS/home.css">
+    <link rel="stylesheet" href="/CSS/blog-style.css">
     <link href='https://fonts.googleapis.com/css?family=Alfa Slab One' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Aleo' rel='stylesheet'>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="js/jquery.validate.js"></script>
-    
     <title>El burrito Restaurant</title>
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!--FONTAWESOME-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous" />
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+
+
+    <style>
+        body {
+            scroll-behavior: smooth;
+            background-color: white;
+            font-size: 22px;
+            padding: 0;
+            margin: 0;
+            font-family: 'Comfortaa', cursive;
+        }
+        
+        p {
+            font-size: 12px
+        }
+        
+        .jumbotron {
+            padding: 2em 0 !important;
+        }
+        
+        .restaurant {
+            margin: auto;
+            letter-spacing: 2px;
+            color: #0064c6;
+            font-weight: bolder;
+            font-size: 1.5em;
+            text-shadow: -4px 2px 3px rgba(150, 150, 150, 1);
+        }
+        
+        footer {
+            font-size: 14px;
+        }
+        
+        .border {
+            border: 1px solid #dee2e6!important;
+        }
+        
+        @media only screen and (max-width: 575px) {
+            .starter-inner {
+                height: auto !important;
+            }
+            .carousel-indicators.menu {
+                justify-content: flex-start;
+                bottom: 0 !important;
+            }
+        }
+    </style>
 </head>
+
 <body>
-    <header>
-        <div class="logo">
-            <img src="/IMG/piata.png" alt="pinata" class="pinata">
-        </div>
-        <div class="restaurant">
-            EL Burrito Restaurante Mexicano
-        </div>
-    </header>
-    <nav>
-        <label for="toggle">&#9776</label>
-        <input type="checkbox" id="toggle">
-        <div class="menu">
-            <a href="index.htm">Home</a>
-            <a href="blog.htm">Blog</a>
-            <a href="menu.htm">Menu</a>
-            <a href="book.html">Book</a>
-            <a href="#">Contact</a>
-            <a href="about.htm">About</a>
-        </div>
-    </nav>
-    <section>
-        <article>
-            <div class="title">
-                Contact us
+    <div class="jumbotron">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="restaurant"><i class="fas fa-pepper-hot"></i> "EL Burrito" Restaurante Mexicano</h1>
+                    <p class="lead text-right">Let's #taco 'bout it...</p>
+                </div>
             </div>
-            <div class="form">
-                <form id="formContact" method="GET" action="commentSubmited.html" name="formContact" >
-                    <input type="text" name="name" id="name" placeholder="Your full name" minlength="2" maxlength="20" required><br>
-                    <input type="text" name="subject" id="subject" minlength="5" maxlength="30" placeholder="Subject" required><br>
-                    <input type="email" name="email" id="email" placeholder="Email" required><br>
-                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Write here your message" required minlength="200"></textarea>
-                    <button id="sendFormContact">Send...</button> <br>
-                </form>
-            </div>       
-        </article>
-    </section>
-    <aside>
-        <div class="title">
-            Our Socials
+            <!-- <div class="row"> -->
+
+            <!-- </div> -->
         </div>
-        <a href="#face"><img src="/IMG/face.png" alt="facebook icon"></a>
-        <a href="#insta"><img src="/IMG/insta.png" alt="instagram icon"></a>
-    </aside>
-    <footer>
-        <div class="banner"></div>
-        El burrito Restaurant 2019 ¦ All Rights Reserved. Created by <a href="https://www.linkedin.com/in/xavierloos/">Javier Lopez</a> 
-    </footer>
+
+    </div>
+    <nav class="navbar navbar-expand-sm d-flex justify-content-between" style="padding-bottom: 0; border-bottom: 5px solid #6c757d;">
+        <!-- Toggler/collapsibe Button -->
+        <div class="row m-auto d-flex justify-content-between">
+            <div class="col-12 col-sm-7 col-md-7 order-1 order-sm-0">
+                <div class="collapse navbar-collapse " id="collapsibleNavbar">
+                    <!-- Links -->
+                    <ul class="navbar-nav ">
+                        <li class="nav-item">
+                            <a class="nav-link text-secondary" href="index.html"><span
+                                    class="d-block d-sm-none d-lg-block">Home</span><i
+                                    class="fas fa-home d-none d-sm-block d-lg-none"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-secondary" href="blog.html"><span
+                                    class="d-block d-sm-none d-lg-block">Blog</span><i
+                                    class="fas fa-blog d-none d-sm-block d-lg-none"></i></a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link text-secondary " href="menu.html"><span
+                                    class="d-block d-sm-none d-lg-block">Menu</span><i
+                                    class="fas fa-utensils d-none d-sm-none d-lg-none"></i></a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link  text-secondary" href="reserve.html"><span
+                                    class="d-block d-sm-none d-lg-block">Reserve</span><i
+                                    class="fas fa-calendar-day d-none d-sm-none d-lg-none"></i></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link text-light" href="#"><span
+                                    class="d-block d-sm-block d-lg-block">Contact</span><i
+                                    class="fas fa-address-card  d-none d-sm-none d-lg-none"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-secondary" href="about.htm"><span
+                                    class="d-block d-sm-none d-lg-block">About</span><i
+                                    class="fas fa-info-circle d-none d-sm-block d-lg-none"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-12 col-sm-5 col-md-5 order-0  order-sm-1">
+                <div class="row">
+                    <div class="col-3">
+                        <button class="navbar-toggler btn btn-outline-secondary" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                            <span class=" fas fa-bars"></span>
+                        </button>
+                    </div>
+                    <div class="col-9 col-sm-12 d-flex align-content-end">
+                        <div class="row">
+                            <div class="col-8 col-sm-10 col-md-7">
+                                <form class="form-inline m-auto">
+                                    <div class="form-group" style="width: 100%;">
+                                        <div class="input-group input-group-sm ">
+                                            <input type="search" class="form-control searchInput" id="validationSearch" placeholder="Search..." aria-describedby="validationShowTooltipEmail" aria-label="Search" required>
+                                            <div class="input-group-append">
+                                                <button class="btn btn-sm btn-secondary search-btn" type="submit" for="validationSearch" id="validationShowTooltipEmail">
+                                                    <span class="fas fa-search"></span>
+                                                </button>
+                                            </div>
+                                            <div class="invalid-tooltip">
+                                                Please add a valid email!
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="col-2 col-sm-2">
+                                <button class="btn btn-outline-secondary" type="button" data-toggle="modal" data-target="#loginModal">
+                                    <span class="far fa-user"></span>
+                                </button>
+                                <!-- Login modal -->
+                                <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleLoginModal" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header  bg-secondary text-light">
+                                                <h5 class="modal-title" id="exampleLoginModal"><i class="fas fa-user"></i> Login</h5>
+
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <form class=" p-5 needs-validation" novalidate>
+                                                    <div class="row">
+                                                        <div class="col-12 col-sm-12">
+                                                            <div class="form-group">
+                                                                <div class="input-group">
+                                                                    <div class="input-group-prepend">
+                                                                        <span for="validationEmail" class=" input-group-text" id="validationShowTooltipEmail"><i
+                                                                                class="fas fa-at"></i></span>
+                                                                    </div>
+                                                                    <input type="text" class="form-control" id="validationEmail" placeholder="Enter Email" aria-describedby="validationShowTooltipEmail" required>
+                                                                    <div class="invalid-tooltip">
+                                                                        Please add a valid email!
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-12 col-sm-12">
+                                                            <div class="form-group">
+                                                                <div class="input-group">
+                                                                    <div class="input-group-prepend">
+                                                                        <span for="validationPassword" class=" input-group-text" id="validationShowTooltipPassword"><i
+                                                                                class="fas fa-key"></i></span>
+                                                                    </div>
+                                                                    <input type="text" class="form-control" id="validationPassword" placeholder="Enter Password" aria-describedby="validationShowTooltipPassword" required>
+                                                                    <div class="invalid-tooltip">
+                                                                        Please add a valid password!
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-12 col-sm-12">
+                                                            <div class="form-check">
+                                                                <input type="checkbox" class="form-check-input" id="checkRemember">
+                                                                <label class="form-check-label" for="checkRememeber">Remember me</a></label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button " class="btn btn-outline-secondary " data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true"><i class="fas fa-times"></i>
+                                                        Cancel</span></button>
+                                                <button type="submit" class="btn btn-secondary"><i
+                                                        class="fas fa-sign-in-alt"></i> Go</button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </nav>
+    <main role="main">
+        <div class="container">
+            <div class="row my-5 border">
+                <div class="col-12 col-sm-12 col-md-5 d-none d-md-block p-0">
+                    <img src="https://images.unsplash.com/photo-1537047902294-62a40c20a6ae?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80" alt="" width="100%" height="100%">
+                </div>
+                <div class="col-12 col-sm-12 col-md-7 py-2">
+                    <h1 class="text-secondary">Contact Us</h1>
+                    <p>Do you have a query? Get in touch filling the form below...</p>
+                    <form class="p-3  p-md-5 needs-validation" novalidate>
+                        <div class="row">
+                            <div class="col-12 col-sm-6">
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <span class=" input-group-text" id="validationShowTooltipName"><i class="fas fa-user"></i></span>
+                                        </div>
+                                        <input type="text" class="form-control" id="validationName" placeholder="Name" aria-describedby="validationShowTooltipName" required>
+                                        <div class="invalid-tooltip">
+                                            We would like to know your name!
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <span for="validationLastName" class=" input-group-text" id="validationShowTooltipLastName"><i class="fas fa-signature"></i></span>
+                                        </div>
+                                        <input type="text" class="form-control" id="validationLastName" placeholder="Last name" aria-describedby="validationShowTooltipLastName" required>
+                                        <div class="invalid-tooltip">
+                                            Please add your last name!
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <span for="validationEmail" class=" input-group-text" id="validationShowTooltipEmail"><i class="fas fa-at"></i></span>
+                                        </div>
+                                        <input type="email" class="form-control" id="validationEmail" placeholder="Enter Email" aria-describedby="validationShowTooltipEmail" required>
+                                        <div class="invalid-tooltip">
+                                            Please add a valid email!
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <span class=" input-group-text" id="validationShowTooltipSubject"><i class="fas fa-quote-left"></i></span>
+                                        </div>
+                                        <input type="text" class="form-control" id="validationSubject" placeholder="Subject" aria-describedby="validationShowTooltipSubject" required>
+                                        <div class="invalid-tooltip">
+                                            What do you want to talk about?
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <textarea type="text" class="form-control" id="request" placeholder="Write your message"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="checkTermsConditons" required>
+                                    <label class="form-check-label" for="checkTermsConditons">I have read the <a href="#"> terms and conditions</a></label>
+                                    <div class="invalid-tooltip">
+                                        Have you read the tems and conditions?
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-secondary"><i class="fas fa-paper-plane"></i>  Send</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+
+        <footer class="bd-footer text-muted bg-light mt-5 mb-0">
+            <div class="container p-3 p-md-5">
+                <div class="row">
+                    <div class="col-6 col-md">
+
+                        <h6 class="title">
+                            Our Socials
+                        </h6>
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="#twitter" class="text-secondary"><i class="fab fa-twitter-square"></i>
+                                    Twitter</a>
+                            </li>
+                            <li>
+                                <a href="#facebook" class="text-secondary"><i class="fab fa-facebook-square"></i>
+                                    Facebook</a>
+                            </li>
+                            <li>
+                                <a href="#instagram" class="text-secondary"><i class="fab fa-instagram"></i>
+                                    Instagram</a>
+                            </li>
+                            <li>
+                                <a href="#googleplus" class="text-secondary"><i class="fab fa-google-plus-square"></i>
+                                    Google+</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-md">
+                        <h6 class="title">
+                            Company
+                        </h6>
+                        <p>Made with <i class="fas fa-heart" style="color: red;"></i> by <a href="https://www.linkedin.com/in/xavierloos/">Javier Lopez Ramos</a></p>
+                        <p> <i class="fas fa-copyright"></i> All rights reserved</p>
+                    </div>
+                    <div class="col-6 col-md">
+                        <h6 class="title">
+                            Shop
+                        </h6>
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="#" class="text-secondary"><i class="fas fa-book"></i></i> New book recipies</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-secondary"><i class="fas fa-tshirt"></i> Mexican Clothes</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-secondary"><i class="fas fa-gift"></i> Gifts</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-secondary"><i class="fas fa-ticket-alt"></i> Vouchers</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-md">
+                        <h6 class="title">
+                            Site Map
+                        </h6>
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="#" class="text-secondary">Home</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-secondary">Blog</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-secondary">Menu</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-secondary">Reserve</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-secondary">Contact</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-secondary">About</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+    </main>
+    <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (function() {
+            'use strict';
+            window.addEventListener('load', function() {
+                // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                var forms = document.getElementsByClassName('needs-validation');
+                // Loop over them and prevent submission
+                var validation = Array.prototype.filter.call(forms, function(form) {
+                    form.addEventListener('submit', function(event) {
+                        if (form.checkValidity() === false) {
+                            event.preventDefault();
+                            event.stopPropagation();
+                        }
+                        form.classList.add('was-validated');
+                    }, false);
+                });
+            }, false);
+        })();
+    </script>
+    <!-- OPTIONAL BOOTSTRAP LIBRARIES -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
 </body>
+
 </html>
