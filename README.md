@@ -1,3 +1,5 @@
+![](https://placehold.it/1100x250/374c53/FFFFFF/?text=El+Burrito)
+
 ## Welcome to GitHub Pages
 
 You can use the [editor on GitHub](https://github.com/xavierloos/restaurant/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
